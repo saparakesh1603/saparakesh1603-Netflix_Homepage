@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body{
+    background-color:#000000;
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;;
+}
+
+.container{
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.2)),
+        url('Images/header-image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+nav img{
+    position: relative;
+    left: 170px;
+    width: 150px;
+}
+
+
+.btn{
+    position: relative;
+    right:180px;
+}
+
+nav select{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.lang{
+    border: 2px solid white;
+    padding: 6px 8px;
+    border-radius: 8%;
+    position: relative;
+    right: 25px;
+}
+.button{
+    cursor: pointer;
+    padding: 10px 15px;
+    color: white;
+    background-color: red;
+    border-radius: 8%;
+    font-weight: bold;
+}
+.head{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 220px;
+
+}
+.head h1{
+    /* font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif; */
+    font-weight: bold;
+    font-size: 50px;
+    /* line-height: 90px; */
+}
+.head1{
+    font-size: 23px;
+    line-height: 65px;
+}
+.head2{
+    /* line-height: 50px; */
+    padding-bottom: 15px;
+    font-size: 21px;
+}
+
+form input{
+    background: transparent;
+    border:1px solid rgb(142, 136, 136);
+    outline: 0;
+    padding:20px;
+    width: 320px;
+    border-radius: 5px;
+    margin-right: 5px;
+    /* border :1px solid white;
+    padding: 15px 200px 15px 15px; */
+}
+form button{
+    width: 180px;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 22px;
+    color: white;
+    background-color: red;
+    border-radius: 6%;
+    font-weight: bold;
+}
+form input::placeholder{
+    color: #B6BBC4;
+    /* color: #A9A9A9; */
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.feature-1{
+    margin-top: 70px;
+    display: flex;
+    /* text-align: center; */
+    /* flex-wrap: wrap;     */
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.text1{
+    text-align: left;
+    position: relative;
+    top: 90px;
+    left: 170px;
+}
+
+.text1 h1{
+    margin-top: 80px;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+.text1 p{
+    width: 65%;
+    padding-top: 20px;
+    font-size: 23px;
+}
+
+.pic1 img{
+    margin-top: 35px;
+    position: relative;
+    right: 100px;
+    width: 600px;
+    height: 400px;
+}
+
+.feature-2{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.text2{
+    margin: auto;
+    width: 100%;
+    color: white;
+    text-align: left;
+    position: relative;
+    left: 100px;
+}
+.text2 h1{
+    width: 65%;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.text2 p{
+    width: 70%;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.pic2 img{
+    width: 500px;
+    height: 400px;
+    margin-top: 35px;
+    position: relative;
+    left: 200px;
+    margin-right: 150px;
+}
+
+
+.que{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding:10px 12%;
+    margin-top: 100px;
+    border-top: 8px solid rgb(62, 57, 57);
+    padding-top: 40px;
+}
+.que h1{
+    font-weight: 700;
+    font-size: 50px;
+
+}
+.acc{
+    margin: 60px auto;
+    width:100%;
+    max-width: 950px;
+    text-align: left;
+
+}
+.acc li{
+    list-style: none;
+    width:100%;
+    padding:5px;
+
+}
+.acc li label{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    font-size: 22px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+input[type="radio"]{
+    display: none;
+}
+.acc .cont{
+    background: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.acc input[type="radio"]:checked+label+.cont{
+    max-height: 600px;
+    padding:30px;
+}
+.acc input[type="radio"]:checked+label::after{
+    transform: rotate(137deg);
+}
+
+
+.last{
+    margin: -30px auto 50px;
+    color: white;
+    text-align: center;
+}
+
+.footer{
+
+    color: #B6BBC4;
+    margin: 40px 200px;
+}
+.footer h4{
+    margin-bottom: 15px;
+}
+.footer a{
+    color: #B6BBC4;
+    text-decoration: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* .row{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col{
+    display: ;
+} */
+
+.row {
+    display: flex; /* Use flexbox to align columns */
+    justify-content: space-between; /* Distribute columns evenly */
+    flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+}
+
+.col {
+    flex: 1; /* Each column takes equal space */
+    max-width: 250px; /* Limit maximum width of each column */
+    padding: 10px; /* Add padding inside each column */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.col a {
+    display: block; /* Make anchor tags behave as blocks */
+    margin-bottom: 8px; /* Add some bottom margin between links */
+    color: #B6BBC4; /* Text color */
+    text-decoration: underline; /* Remove underline */
+    font-size: 14px; /* Font size */
+}
+
+.lang1{
+    width: 10%;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    margin: 7px auto 15px;
+    border: 2px solid white;
+    padding: 6px 8px;
+    border-radius: 8%;
+}
+
+.footer p{
+    color: #B6BBC4;
+    margin-bottom: 30px;
+}
+
+@media (max-width:780px) {
+    nav img{
+        position: relative;
+        left: 40px;
+        width: 80px;
+        height: 30px;
+    }
+    .btn{
+        position: relative;
+        right: 30px;
+    }
+    .lang{
+        position: relative;
+        right: 10px;
+    }
+    .container{
+        width: 100%;
+        height: 75vh;
+    }
+    .head{
+        position: relative;
+        top: 150px;
+    }
+    .head h1{
+        font-size: 30px;
+    }
+    .head1{
+        font-size: 20px;
+    }
+    .head2{
+        font-size: 18px;
+    }
+    .feature-1{
+        display: block;
+        margin-top: -100px;
+        margin-bottom: 180px;
+    }
+    .text1{
+        text-align: center;
+        position: relative;
+        left: 0;
+    }
+    .text1 h1{
+        font-size: 30px;
+    }
+    .text1 p{
+        width: 70%;
+        padding-top: 10px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        left: 120px;
+    }
+    .pic1{
+        width: 100%;
+        position: relative;
+        top: 80px;
+        left: 180px;
+    }
+
+    .feature-2{
+        display: block;
+        margin-top: -20px;
+        margin-bottom: 180px;
+    }
+    .text2{
+        text-align: center;
+        position: relative;
+        right: 0;
+        top: -350px;
+    }
+    .text2 h1{
+        width: 80%;
+        text-align: center;
+        font-size: 32px;
+        position: relative;
+        left: 0;
+    }
+    .text2 p{
+        padding-top: 10px;
+        width: 80%;
+        font-size: 18px;
+    }
+    .pic2{
+        width: 100%;
+        position: relative;
+        bottom: -200px;
+        right: 70px;
+    }
+    .footer{
+        margin: auto;
+    }
+    .footer select{
+        width: 50%;
+    }
+}
+
+@media (max-width:576px){
+    .container{
+        width:100%;
+        height: 65vh;
+    }
+    nav img{
+        position: relative;
+        left: 20px;
+    }
+    
+    .head{
+        position: relative;
+        top: 70px;
+    }
+    .head h1{
+        font-size: 30px;
+    }
+    .head1{
+        font-size: 20px;
+    }
+    .head2{
+        position: relative;
+        left: 35px;
+        width: 80%;
+        font-size: 18px;
+    }
+    .head input{
+        width:70%;
+    }
+    .head button{
+        margin-top: 10px;
+    }
+
+    .btn{
+        position: relative;
+        right: 30px;
+    }
+    .lang{
+        position: relative;
+        right: 10px;
+    }
+ 
+
+    .feature-1{
+        display: block;
+        margin-top: -100px;
+        margin-bottom: 150px;
+    }
+    .text1{
+        text-align: center;
+        position: relative;
+        left: 0;
+    }
+    .text1 h1{
+        font-size: 30px;
+    }
+    .text1 p{
+        width: 85%;
+        padding-top: 10px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        left: 30px;
+    }
+    .pic1 img{
+        width: 80%;
+        height: 70%;
+        position: relative;
+        top: 10px;
+        right:120px;
+    }
+
+    .feature-2{
+        display: block;
+        margin-top: -35px;
+        margin-bottom: 80px;
+    }
+    .text2{
+        text-align: center;
+        position: relative;
+        right: 0;
+        top: -360px;
+    }
+    .text2 h1{
+        width: 85%;
+        text-align: center;
+        font-size: 32px;
+        position: relative;
+        left: -50px;
+    }
+    .text2 p{
+        padding-top: 10px;
+        width: 90%;
+        font-size: 18px;
+        position: relative;
+        right: 80px;
+    }
+    .pic2 img{
+        width: 100%;
+        height: 380px;
+        position: relative;
+        bottom: -10px;
+        left: 90px;
+    }
+
+    .footer{
+        margin: auto;
+    }
+    .footer select{
+        width: 20%;
+    }
+}
