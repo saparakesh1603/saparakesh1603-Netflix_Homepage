@@ -1,4 +1,4 @@
-# Description
+# Netflix_Homepage
 This repository contains the code for a Netflix clone built purely with HTML and CSS. It replicates the UI of the Netflix landing page, offering a glimpse into the design and structure used by the popular streaming platform.
 
 # Features
